@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/cdc278382b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"></div>
+
+            <div id="toggler"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-items fold">
+                <li><a href="#projects" class="current">My Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hi, I'm Yuyu</h1>
+                <p>I'm a front-end developer based in Melbourne, Australia.</p>
+            </div>
+
+            <div class="snow-container">
+                <div class="snowfall"></div>
+                <div class="tree1"></div>
+                <div class="tree2"></div>
+            </div>
+
+            <a href="#about" class="bouncing-arrow"><i class="fa-solid fa-angle-down"></i></a>
+
+        </section>
+
+        <div class="main-text">
+        <section class="about reveal" id="about">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm a self-taught front-end developer and have a passion for bringing elegant and responsive web designs to life. 
+                Before my journey as a developer I was an interpreter. Interpreting and web development both require continuous learning. I'm confident in my ability to learn new things and 
+                have an eagerness to challenge myself in new areas.
+                </p>
+                <div class="about-links">
+                    <span><a href="">Resume</a></span>
+                    <span><a href="">LinkedIn</a></span>
+                </div>
+            </div>
+            
+            <!-- <div class="about-img"> -->
+                <img class="about-img" src="https://images.unsplash.com/flagged/photo-1551373916-bdaddbf4f881?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY1OTMyMTg0NA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="">
+            <!-- </div> -->
+        </section>
+
+        <section class="skills reveal">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-icon"><img src="icons/file_type_html_icon_130541.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/css_18892.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/javascript_icon_130900.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/nodejs_original_wordmark_logo_icon_146412.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/express_original_wordmark_logo_icon_146528.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/mongodb_original_wordmark_logo_icon_146425.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/bootstrap_plain_logo_icon_146619.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/git_icon_130933.png" alt=""></div>
+                <div class="skill-icon"><img src="icons/react_original_logo_icon_146374.png" alt=""></div>
+            </div>
+        </section>
+
+        <section class="projects reveal" id="projects">
+            <h2>My Work</h2>
+            <div class="project-container">
+                
+                <div class="project-info">
+                    <h3 class="project-name">Souvlaki</h3>
+                    <p>Planties is my first full-fledged Web app, inspired by the Yelpcamp project from The Web Developper Bootcamp course (by Colt Steele). Create an account and you'll be able to collect and share photos of your plants with other enthusiasts. Working on this project taught me how to use Express, Node.js and MongoDB.</p>
+                    <p class="technologies">Technologies used:  <span class="technology-list">Vanilla JS - Express - Node.js - MongoDB</span></p>
+                    <div class="project-links">
+                        <span><a href="">Website</a></span><span><a href="">Code</a></span>
+                    </div>
+                </div>    
+                <img class="project-img" src="./img/movieapp.PNG" alt="">
+            </div>
+            
+
+            
+        </section>
+
+        <section class="contact reveal" id="contact">
+            <h2>Get in Touch</h2>
+            <p>Feel free to send me a message if you'd like to talk or work with me!</p>
+            <form action="">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject">
+                <textarea id="letsconnect" name="letsconnect" cols="30" rows="10" placeholder="Let's connect."></textarea>
+                <button id="send">Send<span><i class="fa-solid fa-paper-plane"></i></span></button>
+            </form>
+        </section>
+    </div>
+    </main>
+
+    <footer>
+        <p></p>
+        <div class="contact-links">
+
+        </div>
+        <p>&copy; Yuyu Wu 2022</p>
+    </footer>
+
+    <button class="back-to-top hidden"><i class="fa-solid fa-angle-up"></i></button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
