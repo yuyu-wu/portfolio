@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root {
-	--feature-color: #fff;
+	--primary-color: #fff;
 	--secondary-color: #d5d7d3;
 	--tertiary-color: #757980;
 }
@@ -35,7 +35,7 @@ p {
 
 nav {
 	/* position: fixed; */
-	background-color: var(--feature-color);
+	background-color: var(--primary-color);
 	top: 0;
 	left: 0;
 	right: 0;
@@ -86,7 +86,7 @@ nav.active {
 }
 
 nav.active a {
-	color: var(--feature-color);
+	color: var(--primary-color);
 	transition: all .3s ease-in-out;
 }
 
@@ -97,7 +97,7 @@ nav.active .container {
 nav.active #toggler {
 	padding: 1.5px 1px;
 	transition: all .3s ease-in-out;
-	color: var(--feature-color);
+	color: var(--primary-color);
 }
 
 nav a:hover {
