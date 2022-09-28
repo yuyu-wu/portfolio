@@ -1,4 +1,4 @@
-## Overview
+### Overview
 
 This is my portfolio website.
 
@@ -14,3 +14,8 @@ This is my portfolio website.
 - CSS Grid
 - Javascript
 
+### Features
+
+- Responsive
+- Items reveal on scrolling
+- Nabvar toggling
