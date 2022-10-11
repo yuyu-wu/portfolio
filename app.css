@@ -432,6 +432,10 @@ nav a:hover {
     padding-top: 40px;
 }
 
+.project-container {
+	margin-bottom: 30px;
+}
+
 .projects .technology-list {
     color: var(--tertiary-color); 
 }
@@ -470,6 +474,7 @@ nav a:hover {
 .projects .project-img {
 	width: 100%;
 	margin-top: 20px;
+	border-radius: 5px;
 }
 
 @media (max-width: 568px) {
