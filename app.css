@@ -296,10 +296,15 @@ nav a:hover {
 	display: flex;
 }
 
+.about-text {
+	margin-right: 40px;
+}
+
 .about-img {
 	width: 40%;
 	height: 60%;
 	margin: 0 20px;
+	margin-top: 50px;
 }
 
 @media (max-width: 992px) {
@@ -433,7 +438,7 @@ nav a:hover {
 }
 
 .project-container {
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 .projects .technology-list {
@@ -471,10 +476,15 @@ nav a:hover {
 	border-color: var(--tertiary-color)
 }
 
+.projects .project-info {
+	order: 1;
+}
+
 .projects .project-img {
 	width: 100%;
 	margin-top: 20px;
 	border-radius: 5px;
+	order: 2;
 }
 
 @media (max-width: 568px) {
