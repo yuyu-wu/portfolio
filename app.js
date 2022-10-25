@@ -1,7 +1,6 @@
 // toggler navbar menu
 const toggler = document.querySelector('#toggler')
 toggler.addEventListener('click', () => {
-    // console.log('clicked toggler');
     const navItems = document.querySelector('.nav-items');
     navItems.classList.toggle('fold');
 })
@@ -43,5 +42,4 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 })
-
 

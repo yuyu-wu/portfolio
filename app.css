@@ -439,6 +439,8 @@ nav a:hover {
 
 .project-container {
 	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
 }
 
 .projects .technology-list {
@@ -476,15 +478,10 @@ nav a:hover {
 	border-color: var(--tertiary-color)
 }
 
-.projects .project-info {
-	order: 1;
-}
-
 .projects .project-img {
 	width: 100%;
 	margin-top: 20px;
 	border-radius: 5px;
-	order: 2;
 }
 
 @media (max-width: 568px) {
@@ -492,12 +489,22 @@ nav a:hover {
 		margin: 60px 20px;
 		padding-top: 40px;
 	}
-
-	
 }
+
+@media (max-width: 992px) {
+	.projects .project-info {
+		order: 1;
+	}
+
+	.projects .project-img {
+		order: 2;
+	}
+}
+
 @media (min-width: 992px) {
 	.project-container {
 		display: flex;
+		flex-direction: row;
 	}
 
 	.projects .project-img {
