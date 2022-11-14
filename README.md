@@ -4,7 +4,7 @@ This is my portfolio website.
 
 ### Live Link
 
-- https://yuyu-wu.netlify.app/
+- https://yuyuwu.dev/
 
 ## Screenshots
 
