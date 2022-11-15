@@ -256,8 +256,7 @@ nav a:hover {
 .about {
 	margin: auto 60px;
 	letter-spacing: 1px;
-	height: 100vh;
-    padding-top: 100px;
+    padding-top: 50px;
 	display: flex;
 }
 
@@ -270,12 +269,6 @@ nav a:hover {
 	height: 60%;
 	margin: 0 20px;
 	margin-top: 50px;
-}
-
-@media (max-width: 992px) {
-	.about-img {
-		display: none;
-	}
 }
 
 .about h2 {
@@ -312,13 +305,24 @@ nav a:hover {
 	}
 	
 	.about-links span {
-		border: solid 2px var(--secondary-color);
-		border-radius: 1rem;
 		padding: 7px 15px;
 		margin: 5px;
-		transition: all .3s ease;
+		display: inline-block;
 	}
 }
+
+@media (max-width: 992px) {
+	.about-img {
+		display: none;
+	}
+}
+
+@media (min-width: 568px) {
+	.about {
+		height: 100vh;
+	}
+}
+
 
 .skills {
 	height: 100vh;
