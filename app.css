@@ -110,7 +110,6 @@ nav a:hover {
 }
 
 
-
 .hero {
 	height: 100vh;
 	display: flex;
@@ -133,7 +132,7 @@ nav a:hover {
 	text-decoration: none;
 	animation: bounce 2s ease infinite;
 	color: #000;
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 @keyframes bounce {
@@ -158,7 +157,6 @@ nav a:hover {
         "text snow" 
         "arrow arrow";
 		column-gap: 100px;
-        /* row-gap: 50px; */
 	}
 
 	.hero-text {
@@ -180,8 +178,6 @@ nav a:hover {
 		background-repeat: repeat;
 		height: 350px;
 		width: 350px;
-		/* position:relative; */
-		/* bottom: 493px; */
 		border-radius: 50%;
 		animation: snowfall 5s linear forwards infinite;
 		-webkit-animation: snowfall 5s linear forwards infinite;
@@ -229,8 +225,6 @@ nav a:hover {
 	}
 
 	.tree1 {
-		/* height: 0;
-        width: 0; */
 		border-bottom: 120px solid #5b6b09;
 		border-left: 20px solid transparent;
 		border-right: 20px solid transparent;
@@ -252,12 +246,12 @@ nav a:hover {
 
 	.bouncing-arrow {
 		grid-area: arrow;
-		/* margin-top: 50px; */
         margin-bottom: 70px;
         display: flex;
         justify-content: center;
 	}
 }
+
 
 .about {
 	margin: auto 60px;
