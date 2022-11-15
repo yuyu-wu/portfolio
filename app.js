@@ -1,4 +1,4 @@
-// toggler navbar menu
+// Toggling navbar menu
 const toggler = document.querySelector('#toggler')
 toggler.addEventListener('click', () => {
     const navItems = document.querySelector('.nav-items');
