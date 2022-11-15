@@ -1,11 +1,12 @@
 // Toggling navbar menu
-const toggler = document.querySelector('#toggler')
+const toggler = document.querySelector('#toggler');
+
 toggler.addEventListener('click', () => {
     const navItems = document.querySelector('.nav-items');
     navItems.classList.toggle('fold');
 })
 
-// scroll animation
+// Scroll animation
 window.addEventListener('scroll', () => {
     const reveals = document.querySelectorAll('.reveal');
 
@@ -24,7 +25,7 @@ window.addEventListener('scroll', () => {
     })
 })
 
-// back-to-top button
+// Back-to-top button
 const backToTopButton = document.querySelector('.back-to-top');
 const hero = document.querySelector('.hero');
 const displayButtonHeight = hero.getBoundingClientRect().bottom;

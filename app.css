@@ -421,6 +421,7 @@ nav a:hover {
     margin: 20px auto;
     margin-top: 30px;
 }
+
 .project-links span {
     border: solid 1px var(--secondary-color);
     border-radius: 1rem;
@@ -488,9 +489,9 @@ nav a:hover {
 	}
 }
 
+
 .contact {
     margin: 60px;
-    /* height: 100vh; */
     padding-top: 40px;
 	place-items: center;
 }
@@ -498,7 +499,6 @@ nav a:hover {
 @media (min-width: 992px) {
 	.contact {
 		margin: 160px;
-		/* height: 70vh; */
 	}
 }
 
@@ -561,7 +561,6 @@ nav a:hover {
 		"subject subject"
 		"letsconnect letsconnect"
 		"send send";
-		/* column-gap: 20px; */
 	}
 	
 	.contact #name {
@@ -595,10 +594,11 @@ footer p {
     font-size: 0.8rem;
 }
 
+
 @media (min-width: 768px) {
     .main-text {
-    margin: auto 3rem;
-}
+    	margin: auto 3rem;
+	}
 }
 
 
