@@ -132,7 +132,7 @@ nav a:hover {
 	text-decoration: none;
 	animation: bounce 2s ease infinite;
 	color: #000;
-	margin-top: 50px;
+	/* margin-top: 50px; */
 }
 
 @keyframes bounce {
