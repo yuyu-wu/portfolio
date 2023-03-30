@@ -122,38 +122,18 @@ nav a:hover {
 
 .hero h1 {
 	font-size: 3rem;
-	font-weight: 1500;
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
 
 .bouncing-arrow {
-	font-size: 50px;
-	text-decoration: none;
-	animation: bounce 2s ease infinite;
-	color: #000;
 	display: none;
-}
-
-@keyframes bounce {
-	0%,
-	55%,
-	100% {
-		transform: translateY(0);
-	}
-	35% {
-		transform: translateY(-7px);
-	}
-	75% {
-		transform: translateY(-7px);
-	}
 }
 
 @media (min-width: 768px) {
 	.hero {
 		display: grid;
 		grid-template-areas: 
-        "text snow" 
         "text snow" 
         "arrow arrow";
 		column-gap: 100px;
@@ -179,31 +159,10 @@ nav a:hover {
 		height: 350px;
 		width: 350px;
 		border-radius: 50%;
-		animation: snowfall 5s linear forwards infinite;
-		-webkit-animation: snowfall 5s linear forwards infinite;
+		animation: 5s linear forwards infinite snowfall;
 	}
 
 	@keyframes snowfall {
-		0% {
-			background-position: 0 0;
-		}
-		20% {
-			background-position: 20px 20px;
-		}
-		40% {
-			background-position: 40px 40px;
-		}
-		60% {
-			background-position: 60px 60px;
-		}
-		80% {
-			background-position: 80px 80px;
-		}
-		100% {
-			background-position: 100px 100px;
-		}
-	}
-	@-webkit-keyframes snowfall {
 		0% {
 			background-position: 0 0;
 		}
@@ -239,16 +198,32 @@ nav a:hover {
 		border-bottom: 190px solid #718710;
 		border-left: 60px solid transparent;
 		border-right: 70px solid transparent;
+		position: absolute;
 		left: 100px;
 		top: 80px;
-		position: absolute;
 	}
 
 	.bouncing-arrow {
 		grid-area: arrow;
-        margin-bottom: 70px;
+		font-size: 50px;
+		text-decoration: none;
+		color: #000;
+		margin-bottom: 20px;
         display: flex;
         justify-content: center;
+		animation: 2s ease infinite bounce;
+	}
+
+	@keyframes bounce {
+		0%,
+		55%,
+		100% {
+			transform: translateY(0);
+		}
+		35%,
+		75% {
+			transform: translateY(-7px);
+		}
 	}
 }
 
@@ -271,12 +246,8 @@ nav a:hover {
 	margin-top: 50px;
 }
 
-.about h2 {
-	font-weight: 1000;
-}
-
 .about p {
-	line-height: 1.5em;
+	line-height: 1.5rem;
 	margin: 30px auto;
 }
 
@@ -345,7 +316,6 @@ nav a:hover {
 	border-radius: 0.3rem;
 	margin: 10px;
 	padding: 2rem 5rem;
-	background-color: #fff;
 	display: flex;
 	justify-content: center;
 	transition: all .3s ease;
@@ -493,7 +463,6 @@ nav a:hover {
 .contact {
     margin: 60px;
     padding-top: 40px;
-	place-items: center;
 }
 
 @media (min-width: 992px) {
@@ -577,7 +546,7 @@ nav a:hover {
 	}
 	.contact #send {
 		grid-area: send;
-		place-self: center;
+		justify-self: center;
 		margin-bottom: 10px;
 	}
 }
@@ -622,16 +591,12 @@ footer p {
 	font-size: 1.5rem;
 	cursor: pointer;
 	background-color: var(--secondary-color);
-}
-
-.back-to-top span {
 	display: hidden;
 }
 
 .back-to-top:hover {
 	background-color: #eee;
 	transition: all 0.5s ease;
-	
 }
 
 .hidden {
