@@ -257,6 +257,7 @@ nav a:hover {
 	padding: 7px 25px;
 	margin: 5px;
 	transition: all .3s ease;
+	display: inline-block;
 }
 
 .about-links a {
