@@ -13,15 +13,12 @@ window.addEventListener('scroll', () => {
     reveals.forEach(reveal => {
         const windowHeight = window.innerHeight;
         const elementTop = reveal.getBoundingClientRect().top;
-        const elementVisible = 150;
 
-        if (elementTop < windowHeight - elementVisible) {
+        if (elementTop < windowHeight - 150) {
             reveal.classList.add('active');
         } else {
             reveal.classList.remove('active');
         }
-
-        
     })
 })
 
